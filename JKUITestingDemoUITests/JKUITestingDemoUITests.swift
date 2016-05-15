@@ -30,6 +30,7 @@ class JKUITestingDemoUITests: XCTestCase {
     
     func testRecord() {
         XCTAssert(app.staticTexts["Choose Country"].exists)
+        XCTAssert(app.navigationBars["Choose Country"].exists)
         XCTAssert(app.staticTexts["India"].exists)
         snapshot("01FirstScreen")
         app.tables.staticTexts["India"].tap()
